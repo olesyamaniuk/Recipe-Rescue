@@ -40,7 +40,7 @@ ol {
 
 img {
   display: block;
-  max-width: 100%;
+
   height: auto;
 }
 
@@ -534,6 +534,9 @@ a {
   background-color: transparent;
   border: none;
 }
+.gallery__list {
+  max-width: 375px;
+}
 @media screen and (min-width: 1000px) {
   .gallery__list {
     max-width: 750px;
@@ -571,86 +574,110 @@ a {
 }
 
 .advantages {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  padding-block: 60px;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 48px;
+  margin-top: 48px;
 }
 .advantages-title {
-  text-transform: uppercase;
-  font-family: Luckiest Guy;
-  font-size: 36px;
-  font-weight: 400;
-  line-height: 44px;
-  text-align: center;
-  color: rgba(211, 37, 35, 1);
+  margin-bottom: 40px;
+  padding-top: 48px;
 }
-.advantages-image {
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 0 auto 20px auto;
+  position: relative;
+}
+
+.card {
+  padding: 120px 0 0 12px;
+  display: flex;
+  flex-direction: column;
   width: 343px;
-  height: 1604px;
-  margin: 32px auto 48px;
+  max-width: 375px;
+  height: 371px;
+  background-image: url(/img/adv/Item-1.png);
 }
-.advantages-image-desk {
-  display: none;
+.card-two {
+  background-image: url(/img/adv/Item-2.png);
 }
-
-@media screen and (min-width: 1200px) {
-  .advantages-title {
-    display: none;
-  }
-  .advantages-image {
-    display: none;
-  }
-  .advantages-image-desk {
-    display: flex;
-    margin: auto;
-  }
+.card-three {
+  background-image: url(/img/adv/Item-3.png);
 }
-
-.reviews {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+.card-four {
+  background-image: url(/img/adv/Item-4.png);
 }
-
-.reviews-image {
-  width: 375px;
-  height: 1482px;
-  margin: 0 auto;
+.advantages-card-title {
+  font-family: Luckiest Guy;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #ff9f00;
 }
-.reviews-image-desk {
-  display: none;
-}
-@media screen and (min-width: 1200px) {
-  .reviews-image {
-    display: none;
-  }
-  .reviews-image-desk {
-    display: flex;
-    margin: auto;
-  }
-}
-.about-one {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.about-one-image {
-  width: 375px;
-  height: 1482px;
-  margin: 0 auto;
-}
-.about-one-image-desk {
-  display: none;
+.advantages-card-text {
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #15232c;
 }
 @media screen and (min-width: 1200px) {
-  .about-one-image {
-    display: none;
-  }
-  .about-one-image-desk {
+  .advantages {
     display: flex;
-    margin: auto;
+    flex-wrap: wrap;
+    height: 780px;
+    width: 1400px;
+    column-gap: 80px;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .card {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 120px 0 0 129px;
+    display: flex;
+    flex-direction: column;
+    width: 636px;
+    max-width: 636px;
+    height: 379px;
+    background-image: url(/img/adv//Frame-151.png);
+  }
+  .card-two {
+    background-image: url(/img/adv/Frame\ 153.png);
+  }
+  .card-three {
+    background-image: url(/img/adv/Frame\ 154.png);
+  }
+  .card-four {
+    background-image: url(/img/adv/Frame\ 155.png);
+  }
+  .advantages-card-text {
+    font-family: Quicksand;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+    color: #15232c;
   }
 }
 
@@ -744,6 +771,176 @@ a {
     margin-top: 59px;
   }
 }
+.reviews {
+  margin-bottom: 48px;
+  margin-top: 90px;
+}
+
+.reviews-container {
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  gap: 50px;
+  flex-direction: column;
+  margin: auto;
+}
+.icon img {
+  width: 88px;
+  height: 88px;
+  padding: 8px;
+  border-radius: 9999px;
+  border: 2px;
+}
+.reviews-title {
+  padding-bottom: 40px;
+}
+.review-content {
+  text-align: left;
+  width: 245px;
+  height: 214px;
+  padding: 24px;
+  gap: 16px;
+  border-radius: 16px;
+  border: 3px;
+  border: 6px solid #ff9f00;
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #15232c;
+  margin-left: 78px;
+  margin-top: -40px;
+}
+
+.author {
+  font-family: Quicksand;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #082635;
+  display: flex;
+  justify-content: end;
+  text-align: right;
+}
+@media screen and (min-width: 1200px) {
+  .reviews-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 800px;
+    width: 1400px;
+    column-gap: 80px;
+    align-items: center;
+    justify-content: start;
+  }
+  .review-content {
+    width: 470px;
+    height: 196px;
+    padding: 32p;
+    gap: 24px;
+    border-radius: 24px;
+    border: 3px;
+    border: 6px solid #ff9f00;
+
+    color: #15232c;
+    margin-left: 78px;
+    margin-top: -40px;
+
+    font-family: Quicksand;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+}
+
+.about-one-title {
+  margin: 0 auto;
+  font-family: Luckiest Guy;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(211, 37, 35, 1);
+}
+.about-one-image {
+  width: 275px;
+  height: 558px;
+}
+.about-one__wrapper--top {
+  width: 343px;
+  height: 565px;
+}
+.about-one-image-two {
+  width: 235px;
+  height: 63px;
+  margin: auto;
+}
+.about-one {
+  margin: 48px auto;
+}
+.about-one__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 40px;
+  padding: 38px 0;
+}
+@media screen and (min-width: 1200px) {
+  .about-one-title {
+    font-family: Luckiest Guy;
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 96px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+  }
+  .about-one-image {
+    width: 331.08px;
+    height: 716.49px;
+    border-radius: 18.68px;
+  }
+  .about-one__wrapper--top {
+    width: 746px;
+    height: 108px;
+  }
+  .about-one-image-two {
+    width: 428px;
+    height: 84px;
+  }
+
+  .about-one__wrapper {
+    display: flex;
+    flex-direction: row;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: start;
+    justify-content: center;
+    margin-bottom: 130px;
+    max-width: 1440px;
+    margin: auto;
+  }
+}
 
 .about {
   padding-left: 16px;
@@ -762,14 +959,10 @@ a {
   -ms-flex-align: center;
   align-items: center;
 }
+
 .about__title {
   width: 310px;
   height: 132px;
-  top: 48px;
-  left: 16px;
-  gap: 0px;
-  opacity: 0px;
-
   text-align: center;
   color: rgba(211, 37, 35, 1);
   margin: auto;
@@ -824,6 +1017,7 @@ a {
 .about-image-button {
   padding-bottom: 40px;
 }
+
 @media screen and (min-width: 1200px) {
   .about {
     padding-left: 182;
